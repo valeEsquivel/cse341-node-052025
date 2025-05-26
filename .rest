@@ -1,0 +1,7 @@
+# Get All Contacts
+GET https://cse341-node-052025.onrender.com/contacts
+
+###
+
+# Get Contact by ID
+GET https://cse341-node-052025.onrender.com/contacts/682c0b51e675f0c0f120488d
