@@ -1,7 +1,35 @@
 # Get All Contacts
-GET https://cse341-node-052025.onrender.com/contacts
+GET http://localhost:3000/contacts
 
 ###
 
 # Get Contact by ID
-GET https://cse341-node-052025.onrender.com/contacts/682c0b51e675f0c0f120488d
+GET http://localhost:3000/contacts/682c0b51e675f0c0f120488d
+
+
+### # Create Contact
+POST http://localhost:3000/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Abigail",
+    "lastName": "Martinez",
+    "email": "abiichan@gmail.com",
+    "favoriteColor": "green",
+    "birthday": "05/02/1994"
+}
+
+### # Update Contact
+PUT http://localhost:3000/contacts/682c0b51e675f0c0f120488d HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Teffa",
+    "lastName": "Esquivel",
+    "email": "teffasud@gmail.com",
+    "favoriteColor": "Golden",
+    "birthday": "09/02/1994"
+}
+
+### # Delete Contact
+DELETE http://localhost:3000/contacts/6833ff1e320924de86710af5 HTTP/1.1
